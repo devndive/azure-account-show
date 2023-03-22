@@ -1,9 +1,7 @@
 name: Build image and push to github packages
 
 on:
-  push:
-    tags:
-      - '*'
+  workflow_dispatch:
 
 env:
   REGISTRY: ghcr.io
